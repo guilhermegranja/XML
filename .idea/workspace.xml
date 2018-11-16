@@ -20,7 +20,6 @@
       <change afterPath="$PROJECT_DIR$/../JDOM/lib/xerces.2.11.NOTICE" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JDOM/lib/xercesImpl.jar" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JDOM/lib/xml-apis.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.13/BUILDING.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.13/CONTRIBUTING.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../apache-tomcat-9.0.13/LICENSE" afterDir="false" />
@@ -816,15 +815,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542385946873</updated>
-      <workItem from="1542385959791" duration="2286000" />
+      <workItem from="1542385959791" duration="2541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2286000" />
+    <option name="totallyTimeSpent" value="2541000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Image Layers" />
