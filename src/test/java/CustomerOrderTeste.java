@@ -1,8 +1,9 @@
-
-public class CustomerOrder {
+public class CustomerOrderTeste {
 
     String companyname, contactname, contacttitle, address, city, state, country;
-    int phone, CEP, CNPJ;
+    float phone;
+    float CEP;
+    String CNPJ;
 
     public String getCompanyname() {
         return companyname;
@@ -60,19 +61,44 @@ public class CustomerOrder {
         this.country = country;
     }
 
-    public int getPhone() {
+    public float getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(float phone) {
         this.phone = phone;
     }
 
-    public int getCEP() {
+    public float getCEP() {
         return CEP;
     }
 
-    public void setCEP(int CEP) {
+    public void setCEP(float CEP) {
         this.CEP = CEP;
+    }
+
+    public String getCNPJ() {
+        return CNPJ;
+    }
+
+    public void setCNPJ(String CNPJ) {
+        this.CNPJ = CNPJ;
+    }
+
+    public String Dados() {
+
+        String dados = "Dados do pedido:"
+                + "\n Nome Fantasia da empresa:" + this.getCompanyname()
+                + "\n Endereço:"                 + this.getAddress()
+                + "\n Representante da empresa:" + this.getContactname()
+                + "\n Cargo do representante:"   + this.getContacttitle()
+                + "\n Telefone da empresa:"      + this.getPhone()
+                + "\n CNPJ:"                     + this.getCNPJ()
+                + "\n Cidade:"                   + this.getCity()
+                + "\n Estado:"                   + this.getState()
+                + "\n País:"                     + this.getCountry()
+                + "\n CEP:"                      + this.getCEP();
+
+        return dados;
     }
 }
