@@ -1,8 +1,7 @@
+public class CustomerInfoTeste {
 
-public class CustomerOrder {
-
-    String companyname, contactname, contacttitle, address, city, state, country;
-    int phone, CEP, CNPJ;
+   private String companyname, contactname, contacttitle, address, city, state, country, CNPJ, phone;
+   private double CEP;
 
     public String getCompanyname() {
         return companyname;
@@ -60,19 +59,27 @@ public class CustomerOrder {
         this.country = country;
     }
 
-    public int getPhone() {
+    public String getCNPJ() {
+        return CNPJ;
+    }
+
+    public void setCNPJ(String CNPJ) {
+        this.CNPJ = CNPJ;
+    }
+
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
-    public int getCEP() {
+    public double getCEP() {
         return CEP;
     }
 
-    public void setCEP(int CEP) {
+    public void setCEP(double CEP) {
         this.CEP = CEP;
     }
 }
