@@ -1,11 +1,29 @@
-import java.util.Calendar;
-
 public class ShipInfoTeste {
 
-    private String ShipAdress, ShipCity, ShipState, ShipCountry, ShipProduct, ShipTransp;
-    private double ShipCEP;
+    private String ShipAdress, ShipCity, ShipState, ShipCountry, ShipProduct, ShipTransp, ShipCEP, ShipOrder, ShipExit, ShipArraival;
     private float ShipWeight;
-    private Calendar ShipOrder, ShipExit, ShipArraival;
+
+    public String pedidoInfo (String shipAdress, String shipCity, String shipState, String shipCountry, String shipCEP,
+                              String shipTransp, String shipProduct, float shipWeight, String shipOrder, String shipExit,
+                              String shipArraival) {
+        String dadosPedido = this.getShipAdress()
+                + this.getShipCity()
+                + this.getShipState()
+                + this.getShipCountry()
+                + this.getShipCEP()
+                + this.getShipTransp()
+                + this.getShipProduct()
+                + this.getShipWeight()
+                + this.getShipOrder()
+                + this.getShipExit()
+                + this.getShipArraival();
+
+        return dadosPedido;
+    }
+
+
+
+
 
     public String getShipAdress() {
         return ShipAdress;
@@ -55,12 +73,36 @@ public class ShipInfoTeste {
         ShipTransp = shipTransp;
     }
 
-    public double getShipCEP() {
+    public String getShipCEP() {
         return ShipCEP;
     }
 
-    public void setShipCEP(double shipCEP) {
+    public void setShipCEP(String shipCEP) {
         ShipCEP = shipCEP;
+    }
+
+    public String getShipOrder() {
+        return ShipOrder;
+    }
+
+    public void setShipOrder(String shipOrder) {
+        ShipOrder = shipOrder;
+    }
+
+    public String getShipExit() {
+        return ShipExit;
+    }
+
+    public void setShipExit(String shipExit) {
+        ShipExit = shipExit;
+    }
+
+    public String getShipArraival() {
+        return ShipArraival;
+    }
+
+    public void setShipArraival(String shipArraival) {
+        ShipArraival = shipArraival;
     }
 
     public float getShipWeight() {
@@ -69,29 +111,5 @@ public class ShipInfoTeste {
 
     public void setShipWeight(float shipWeight) {
         ShipWeight = shipWeight;
-    }
-
-    public Calendar getShipOrder() {
-        return ShipOrder;
-    }
-
-    public void setShipOrder(Calendar shipOrder) {
-        ShipOrder = shipOrder;
-    }
-
-    public Calendar getShipExit() {
-        return ShipExit;
-    }
-
-    public void setShipExit(Calendar shipExit) {
-        ShipExit = shipExit;
-    }
-
-    public Calendar getShipArraival() {
-        return ShipArraival;
-    }
-
-    public void setShipArraival(Calendar shipArraival) {
-        ShipArraival = shipArraival;
     }
 }

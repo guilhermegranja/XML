@@ -1,7 +1,25 @@
 public class CustomerInfoTeste {
 
-   private String companyname, contactname, contacttitle, address, city, state, country, CNPJ, phone;
-   private double CEP;
+    private String companyname, contactname, contacttitle, address, city, state, country, CNPJ, phone, CEP;
+
+    //metodo construtores
+    CustomerInfoTeste (String companyname, String CNPJ, String address, String city, String state, String country,
+                             String CEP, String contactname, String contacttitle, String phone) {
+        this.companyname = companyname;
+        this.CNPJ = CNPJ;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+        this.CEP = CEP;
+        this.contactname = contactname;
+        this.contacttitle = contacttitle;
+        this.phone = phone;
+    }
+
+
+
+
 
     public String getCompanyname() {
         return companyname;
@@ -75,11 +93,11 @@ public class CustomerInfoTeste {
         this.phone = phone;
     }
 
-    public double getCEP() {
+    public String getCEP() {
         return CEP;
     }
 
-    public void setCEP(double CEP) {
+    public void setCEP(String CEP) {
         this.CEP = CEP;
     }
 }
