@@ -34,6 +34,17 @@ public class OrderDescrip {
                 + this.getOrderDay()
                 + this.getOrderExit()
                 + this.getOrderArrival()
+                + "Dados do entregador"
+                + this.getNome()
+                + this.getCPF()
+                + this.getRG()
+                + this.getCNH()
+                + this.getPhone()
+                + this.getAutoMarca()
+                + this.getAutoModelo()
+                + this.getAutoPlaca();
+
+        return dados;
     }
 
     public String getCompanyName() {
