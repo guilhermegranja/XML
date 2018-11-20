@@ -1,6 +1,6 @@
 public class Delivery {
 
-    private String nome, CPF, RG, CNH, autoMarca, autoModelo, autoPlaca, phone;
+    private String nome, CPF, RG, CNH, autoMarca, autoModelo, autoPlaca, phone, autoType;
 
     Delivery() {
         this.nome = getNome();
@@ -11,6 +11,7 @@ public class Delivery {
         this.autoModelo = getAutoModelo();
         this.autoPlaca = getAutoPlaca();
         this.phone = getPhone();
+        this.autoType = getAutoType();
     }
 
     public String getNome() {
@@ -75,5 +76,13 @@ public class Delivery {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public String getAutoType() {
+        return autoType;
+    }
+
+    public void setAutoType(String autoType) {
+        this.autoType = autoType;
     }
 }
