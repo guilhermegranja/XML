@@ -1,6 +1,6 @@
 public class Customer {
 
-    private String companyName, CNPJ, address, city, state, country, CEP, contactName, contactTitle, contactPhone;
+    private String companyName, CNPJ, address, city, state, country, CEP, contactName, contactTitle, contactPhone, email;
     private Order order;
     private Delivery delivery;
 
@@ -115,5 +115,13 @@ public class Customer {
 
     public void setDelivery(Delivery delivery) {
         this.delivery = delivery;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }
