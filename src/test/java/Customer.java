@@ -100,13 +100,6 @@ public class Customer {
     public void setContactPhone(String contactPhone) {
         this.contactPhone = contactPhone;
     }
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 
     public Order getOrder() {
         return order;
